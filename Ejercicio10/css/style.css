@@ -1,0 +1,39 @@
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.verticales{
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex-grow: 1;
+    background-color: orange;
+}
+
+.elemento1{
+    background-color: antiquewhite;
+}
+.elemento2{
+    background-color: blueviolet;
+}
+.elemento3{
+    background-color: darkolivegreen;
+}
+@media (max-width: 640px){
+    .contenedor{
+        flex-direction: column;
+    }
+    .main{
+        background-color: black;
+    }
+    .verticales{
+        justify-content: flex-start;
+       align-items: baseline;
+       flex-direction: row;
+    }
+}
